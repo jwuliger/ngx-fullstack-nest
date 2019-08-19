@@ -7,6 +7,11 @@ import { AppService } from './app.service';
 export class AppController {
 	constructor(private readonly appService: AppService) { }
 
+	@Get('')
+	loadRoot(): any {
+		return 'JMW API'
+	}
+
 	@Get('todos')
 	getTodos(): Todo[] {
 		return this.appService.getTodos();

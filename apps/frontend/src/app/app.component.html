@@ -1,6 +1,22 @@
-<h1>Todos</h1>
-<ul>
-	<li *ngFor="let t of (todos | async)">{{ t.title }}</li>
-</ul>
+<nb-layout>
 
-<router-outlet></router-outlet>
+	<nb-layout-header fixed>
+		<!-- Insert header here -->
+	</nb-layout-header>
+
+	<nb-layout-column>
+
+		<h1>Todos</h1>
+		<ul>
+			<li *ngFor="let t of (todos | async)">{{ t.title }}</li>
+		</ul>
+
+		<router-outlet></router-outlet>
+
+	</nb-layout-column>
+
+	<nb-layout-footer fixed>
+		<!-- Insert footer here -->
+	</nb-layout-footer>
+
+</nb-layout>
