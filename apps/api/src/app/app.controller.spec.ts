@@ -16,7 +16,7 @@ describe('AppController', () => {
 	describe('getData', () => {
 		it('should return "JMW API"', () => {
 			const appController = app.get<AppController>(AppController);
-			expect(appController.loadRoot()).toEqual({ message: 'JMW API' });
+			expect(appController.getRoot()).toEqual({ message: 'JMW API' });
 		});
 	});
 });

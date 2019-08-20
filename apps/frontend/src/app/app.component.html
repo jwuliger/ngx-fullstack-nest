@@ -1,12 +1,14 @@
 <nb-layout>
 
 	<nb-layout-header fixed>
-		<!-- Insert header here -->
+		JMW Angular Monorepo Seed
 	</nb-layout-header>
 
 	<nb-layout-column>
 
-		<h1>Todos</h1>
+		<!-- Page Content <button nbButton>Hello World</button> -->
+
+		<span class="todo-header">Todo Items</span>
 		<ul>
 			<li *ngFor="let t of (todos | async)">{{ t.title }}</li>
 		</ul>
@@ -15,8 +17,8 @@
 
 	</nb-layout-column>
 
-	<nb-layout-footer fixed>
-		<!-- Insert footer here -->
-	</nb-layout-footer>
+	<!-- <nb-layout-footer fixed>
+		The Footer
+	</nb-layout-footer> -->
 
 </nb-layout>

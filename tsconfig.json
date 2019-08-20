@@ -16,7 +16,7 @@
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
-			"@jmw/data": ["libs/data/src/index.ts"]
+			"@jmw/data": ["libs/data/src/index.ts"],
 		}
 	},
 	"exclude": ["node_modules", "tmp"]
