@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Todo } from '@jmw/data';
-
 import { Observable } from 'rxjs';
 
 @Component({
@@ -13,7 +12,7 @@ export class AppComponent {
 	title = 'frontend';
 	todos: Observable<Todo[]>;
 
-	constructor(http: HttpClient) {
-		this.todos = http.get<Todo[]>('/api/todos');
+	constructor(private http: HttpClient) {
+		this.todos = this.http.get<Todo[]>('/api/todos');
 	}
 }

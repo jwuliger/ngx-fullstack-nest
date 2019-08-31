@@ -1,24 +1,8 @@
-<nb-layout>
+<div class="todo-header">Todo Items</div>
+<ul>
+	<li *ngFor="let t of (todos | async)">{{ t.title }}</li>
+</ul>
 
-	<nb-layout-header fixed>
-		JMW Angular Monorepo Seed
-	</nb-layout-header>
+Build UI
 
-	<nb-layout-column>
-
-		<!-- Page Content <button nbButton>Hello World</button> -->
-
-		<span class="todo-header">Todo Items</span>
-		<ul>
-			<li *ngFor="let t of (todos | async)">{{ t.title }}</li>
-		</ul>
-
-		<router-outlet></router-outlet>
-
-	</nb-layout-column>
-
-	<!-- <nb-layout-footer fixed>
-		The Footer
-	</nb-layout-footer> -->
-
-</nb-layout>
+<router-outlet></router-outlet>
